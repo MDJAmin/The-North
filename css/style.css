@@ -141,3 +141,46 @@ header {
     border-radius: 5px;
   }
   
+
+  
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    .background-video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-aspect-ratio: 4/3) {
+    .background-video {
+      width: auto;
+      height: 100%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    header {
+      padding: 1.3rem 5%;
+    }
+  
+    .content h1 {
+      font-size: 7rem;
+    }
+  }
+  
