@@ -105,11 +105,11 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: all 0.3s ease-in;
+    transition: all 0.5s;
   }
   
   .btn:hover {
-    transform: translateY(-5px);
+    transform: scale(1.1);
   }
   
   .light::before {
@@ -194,8 +194,8 @@ header {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(50px);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
       z-index: -1;
     }
   
@@ -209,7 +209,7 @@ header {
       background: linear-gradient(
         90deg,
         transparent,
-        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.738),
         transparent
       );
       transition: 0.8s;
@@ -237,8 +237,8 @@ header {
       left: 0;
       width: 100%;
       height: 0;
-      background: rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(50px);
+      background: rgba(4, 137, 164, 0.1);
+      backdrop-filter: blur(5px);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
       overflow: hidden;
       transition: all 0.3s ease;
